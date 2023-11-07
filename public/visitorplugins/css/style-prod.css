@@ -1,0 +1,163 @@
+.border-div {
+    position: relative;
+    border: 2px solid #DDDDDD; /* Add a border to the div */
+    display: flex; /* Use flexbox to vertically center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.title {
+    /* Styles for the title (no changes needed) */
+    position: absolute;
+    top: -0.3rem;
+    right: -1.5rem;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title2 {
+    right: -6rem;
+}
+
+.toast {
+    height: 4.8rem;
+}
+
+.toast-body {
+    font-size: 1.2rem;
+}
+
+.price-toast {
+    background-color: #2EB3D0;
+    color: #ffffff;
+}
+
+.details-fa{
+    color: #2EB3D0;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+}
+
+#mainImage,
+#mainImage2 {
+    width: 100%;
+    max-width: 30rem;  /* Ensure the image doesn't exceed its container width */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth opacity transition effect */
+}
+
+.thumbnail, .thumbnail2 {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 5px; /* Add some spacing between thumbnails */
+    cursor: pointer; /* Add a pointer cursor for interaction */
+}
+
+.thumbnail:hover, .thumbnail2:hover {
+    opacity: 0.7; /* Reduce opacity on hover for visual feedback */
+}
+
+.custom-border {
+    border: 1px solid #D3D8EE; /* Customize the border styles as needed */
+    border-top-left-radius: 20px; /* Adjust the roundness of the top-left corner */
+    border-top-right-radius: 20px; /* Adjust the roundness of the top-right corner */
+    border-bottom-left-radius: 20px; /* Adjust the roundness of the bottom-left corner */
+    border-bottom-right-radius: 70px; /* Adjust the roundness of the bottom-right corner */
+}
+
+.lead {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 100;
+    color: #696969;
+}
+
+.we-icon {
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background-color: #D7F8FF;
+    color: #2EB3D0;
+}
+
+.modal-dialog {
+    max-width: 90vh; /* Set the maximum width and height to the same value */
+}
+
+.modal-body {
+    max-height: 110vh; /* Set the maximum width and height to the same value */
+    overflow-y: auto; /* Add a vertical scrollbar if the content overflows */
+}
+
+/***********/
+.carousel-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.owl-carousel {
+    display: block;
+    margin: 0 auto;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-prev {
+    right: -2rem;
+}
+
+.owl-next {
+    left: -2rem;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 0.9rem;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: transparent !important;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 4rem;
+    font-family: sans-serif, "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial;
+    font-weight: 100;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: color 0.3s;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    background-color: transparent !important;
+    color: #AC840B;
+}
+
+.owl-theme, .owl-nav[class*="owl-"]:hover {
+    background-color: transparent;
+}
+
+.img-container {
+	width: 200px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.img-contained {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+p.lead.footer-p {
+    color: #ffffff;
+}

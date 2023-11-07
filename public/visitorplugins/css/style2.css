@@ -1,0 +1,105 @@
+.main-navbar {
+    /* Your existing styles for the navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0a265a;
+    transition: background-color 0.3s;
+    padding-bottom: 1.1rem;
+}
+
+.main-navbar.sticky {
+    /* Your existing styles for the sticky navbar */
+    background-color: #0a265a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 1rem;
+    pointer-events: auto;
+}
+
+/* Add a top margin to create space for the sticky navbar */
+main {
+    margin-top: 5.7rem; /* Adjust the value as needed */
+}
+
+.jumbotron {
+    height: 260px;
+    background-size: cover;
+    background-image: url('../images/slider-1.jpg');
+    background-position: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+}
+
+.jumbotron-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page-title {
+    font-family: 'DGAgnadeenBld', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.breadcrumb-link,
+.breadcrumb-link-active {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none; /* Remove the default underline */
+    display: inline-block; /* Set to inline-block to keep links side by side */
+    transition: color 0.3s, border-color 0.3s, font-weight 0.1s; /* Transition for text color, underline color, and font weight */
+    color: #ffffff;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link-active
+{
+    color: #2eb3d0; /* Text color on hover */
+}
+
+.card {
+    width: 100% !important;
+}
+
+.custom-button2-solid {
+    width: 100%;
+    height: 2.7rem;
+}
+
+label {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.project-badge {
+    top: 1rem;
+    right: 1rem;
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.dev-bio {
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.lead {
+    line-height: 1.7rem;
+}

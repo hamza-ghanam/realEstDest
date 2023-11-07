@@ -1,0 +1,565 @@
+@font-face {
+    font-family: 'DGAgnadeen';
+    font-style: normal;
+
+    src: url('../fonts/DGAgnadeen-Regular.woff2') format('woff2'),
+    url('../fonts/DGAgnadeen-Regular.woff') format('woff'),
+    url('../fonts/DGAgnadeen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DGAgnadeenBld';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/DGAgnadeen-Bold.woff2') format('woff2'),
+    url('../fonts/DGAgnadeen-Bold.woff') format('woff'),
+    url('../fonts/DGAgnadeen-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DGAgnadeenXBld';
+    font-style: normal;
+
+    src: url('../fonts/DGAgnadeen-Extrabold.woff2') format('woff2'),
+    url('../fonts/DGAgnadeen-Extrabold.woff') format('woff'),
+    url('../fonts/DGAgnadeen-Extrabold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DGAgnadeenLgt';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/DGAgnadeen-Light.woff2') format('woff2'),
+    url('../fonts/DGAgnadeen-Light.woff') format('woff'),
+    url('../fonts/DGAgnadeen-Light.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.main-navbar {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    position: fixed; /* Fixed position to overlap other content */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Set a higher z-index value than the carousel */
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.main-navbar.sticky {
+    background-color: #0a265a; /* Background color when scrolled */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-collapse.collapse.show {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1.5rem;
+    }
+
+}
+
+.main-title {
+    font-family: 'DGAgnadeenXBld', 'Segoe UI', Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.main-ddm {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centre {
+    margin: auto;
+    padding: 10px;
+}
+
+.main-nav-item {
+    margin-left: 2.3rem;
+}
+
+.main-nav-link {
+    color: #ffffff;
+}
+
+.main-nav-link:hover {
+    color: #2eb3d0;
+}
+
+.main-nav-item.active a.main-nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #2eb3d0;
+}
+@media (min-width: 992px) {
+    .main-nav-item.active a.nav-link::before {
+        content: '';
+        background: url('../images/main-logo.svg') center bottom no-repeat;
+        transform: rotate(180deg);
+        background-size: 100% 20px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 100%;
+        height: 20px;
+        display: block;
+    }
+}
+
+/* This code will apply to screens with a width of 576px and larger (typical mobile devices) */
+@media (max-width: 991px) {
+    .main-nav-item.active a.nav-link::before {
+        display: none; /* Hide the icon for mobile devices */
+    }
+}
+
+.custom-button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 12px; /* Adjust the font size to center the 'O' properly */
+    text-align: center;
+    line-height: 10px; /* Set to match the button's height */
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.custom-button2 {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    font-size: 16px; /* Adjust the font size to center the 'O' properly */
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #AC840B solid;
+    line-height: 10px; /* Set to match the button's height */
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.custom-button2-solid {
+    width: 130px;
+    height: 50px;
+    background: #AC840B;
+    color: white;
+    font-size: 18px; /* Adjust the font size to center the 'O' properly */
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #AC840B solid;
+    line-height: 10px; /* Set to match the button's height */
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.custom-button:hover, .custom-button2:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.custom-button2-solid:hover {
+    background-color: #bda660;
+}
+
+
+.slider-carousel {
+    height: 48rem;
+}
+
+.slider-carousel {
+    /* margin-bottom: 4rem; */
+}
+
+/* Since positioning the image, we need to help out the caption */
+.slider-carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+.slider-carousel-item {
+    height: 48rem;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../images/slider-1.jpg');
+    position: relative;
+}
+
+.slider-carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with opacity */
+    z-index: 1; /* Place the overlay above the image */
+}
+
+.slider-carousel-text {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Place the text above the overlay */
+    color: white;
+    line-height: 1.7;
+    width: 40%;
+    padding: 20px;
+}
+
+.slider-carousel-h1 {
+    font-family: 'DGAgnadeenBld', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.slider-carousel-p {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.slider-carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last value (0.5) */
+    z-index: 0; /* Ensure the overlay is below other content */
+}
+
+
+.slider-carousel-item > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    height: 48rem;
+}
+
+.centred-elem {
+    text-align: center !important;
+}
+
+.slider-carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last value (0.5) */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.slider-carousel-item img {
+    object-fit: cover; /* Maintain image aspect ratio and cover the entire space */
+    width: 100%; /* Make the image width 100% of its container */
+    height: 100%; /* Make the image height 100% of its container */
+}
+
+
+.carousel-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.owl-carousel {
+    display: block;
+    margin: 0 auto;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-prev {
+    right: -2rem;
+}
+
+.owl-next {
+    left: -2rem;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 0.9rem;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: transparent !important;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 4rem;
+    font-family: sans-serif, "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial;
+    font-weight: 100;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: color 0.3s;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    background-color: transparent !important;
+    color: #AC840B;
+}
+
+.owl-theme, .owl-nav[class*="owl-"]:hover {
+    background-color: transparent;
+}
+
+.products-carousel .owl-prev,
+.products-carousel .owl-next
+ {
+	top: 14rem;
+}
+
+.img-container {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.prod-card {
+	height: 35rem;
+}
+
+.img-container1 {
+	height: 100%;
+}
+
+.img-contained {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-toggler {
+    border: 2pt solid #2eb3d0;
+    color: #2eb3d0;
+
+}
+
+/* Target tablet and mobile sized screens */
+@media (max-width: 991px) {
+    .d-flex.justify-content-between.align-items-center {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .slider-carousel-text {
+        width: 90%;
+    }
+}
+
+.lead, .card-text {
+    font-family: 'DGAgnadeenLgt', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.featurette-heading {
+    font-family: 'DGAgnadeenBld', 'Segoe UI', Tahoma, sans-serif;
+}
+
+h2, h3 {
+    font-family: 'DGAgnadeenBld', 'Segoe UI', Tahoma, sans-serif;
+}
+
+h6, h5, h4 {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+}
+
+
+.spaced-column {
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.spaced-column:hover {
+    transform: scale(1.1); /* Increase the size of the container on hover */
+}
+
+/* Style for image inside .spaced-column when hovered */
+.spaced-column:hover img {
+    transform: scale(1.2); /* Increase the size of the image on hover */
+}
+
+/* Style for srv-head when hovered */
+.spaced-column:hover .srv-head {
+    color: #AC840B; /* Change the font color on hover (use your desired color) */
+}
+
+/* Services Slider */
+
+
+
+
+@media screen and (min-width: 577px) {
+
+
+    .image-wrapper2 {
+        height: 4vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .srv-card:not(:first-child) {
+        display: none;
+    }
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-wrapper2 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.image-section {
+    position: relative;
+    min-height: 300px; /* Adjust as needed */
+    background: url('../images/db97c0e977dd8bfdf277eafb07e29e15.jpeg') center center;
+    background-size: cover;
+    z-index: 0;
+    padding-top: 80px;
+}
+
+/* Dark layer centered vertically and horizontally within the image */
+.dark-layer {
+    position: absolute;
+    top: 5%; /* Adjust top positioning */
+    left: 5%; /* Adjust left positioning */
+    width: 90%; /* Adjust width to cover the desired portion */
+    height: 90%; /* Adjust height to cover the desired portion */
+    background: rgba(46, 179, 208, 0.7); /* Dark layer with opacity */
+    z-index: 1; /* Set a higher z-index to place it behind the image */
+}
+
+.overlay-image {
+    opacity: 0.7;
+    fill: blue;
+}
+
+/* Style for the text */
+.overlay-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    z-index: 2;
+}
+
+
+/* Links Nav*/
+.srv-link {
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none; /* Remove the default underline */
+    display: inline-block; /* Set to inline-block to keep links side by side */
+    margin-right: 20px; /* Add spacing between links */
+    transition: color 0.3s, border-color 0.3s, font-weight 0.1s; /* Transition for text color, underline color, and font weight */
+    color: #575656; /* Default text color */
+    position: relative; /* Position relative for pseudo-elements */
+    font-weight: normal; /* Set default font weight */
+}
+
+.srv-link:hover {
+    color: #D5B13A; /* Text color on hover */
+    font-weight: 600; /* Font weight on hover */
+}
+
+.srv-link:active,
+.srv-link.active {
+    color: #D5B13A; /* Text color when the link is active */
+    font-weight: 600; /* Font weight when the link is active */
+}
+
+/* Thicker underline with space from the text */
+.srv-link::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid transparent; /* Thicker underline */
+    padding-bottom: 5px; /* Add space from the text */
+    transition: border-color 0.3s; /* Transition for underline color */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.srv-link:hover::after,
+.srv-link.active::after {
+    border-color: #575656; /* Underline color on hover and when the link is active */
+}
+
+.footer-h3 {
+    text-align: right;
+    color: #ffffff;
+}
+
+.footer-ul, .footer-li, .footer-p {
+    text-align: right;
+    background-color: transparent;
+    color: white;
+    font-family: 'DGAgnadeen', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.footer-p {
+    text-align: justify;
+    color: #ffffff;
+}
+
+.footer-li a {
+    color: white;
+}
+
+.footer-li a:hover {
+    color: #2eb3d0;
+}
+
+.social-icons button {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.modal-dialog {
+    max-width: 90vh; /* Set the maximum width and height to the same value */
+}
+
+.modal-body {
+    max-height: 110vh; /* Set the maximum width and height to the same value */
+    overflow-y: auto; /* Add a vertical scrollbar if the content overflows */
+}
